@@ -1,0 +1,31 @@
+h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color:#270C02;
+  color: #EBF2FA;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: #5EF38C;
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  font-weight: 500;
+}
