@@ -15,6 +15,46 @@ body {
   font-weight: 400;
 }
 
+.section {
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px auto;
+  background-color: #4e1804;
+}
+
+.section ul {
+  text-align: left;
+}
+
+.section-300 {
+  height: 300px;
+}
+
+/*
+
+Abaixo, a maneira de centralizar verticalmente algo sem Flexbox (graças ao Google):
+
+Top + TranslateY
+Se alguém ler isso e quiser uma explicação melhor, joga lá no Slack e me marca \o
+
+*/
+
+.section .column:first-child {
+  float: left;
+  margin-right: 24px;
+}
+
+.section .column:last-child {
+  position: absolute;
+  width: 464px;
+  left: 326px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
 p {
   line-height: 1.4;
 }
@@ -32,4 +72,10 @@ strong {
 em {
   font-style: italic;
   font-weight: 500;
+}
+
+div > ul > li:nth-child(1),
+div > ul > li:nth-child(3) {
+  font-weight: 600;
+  font-style: italic;
 }
